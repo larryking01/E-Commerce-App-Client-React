@@ -1,0 +1,1050 @@
+/* .App {
+  text-align: center;
+} */
+
+
+/* variables */
+:root {
+  --primary_btn : #3a2e2c;
+  --secondary_btn : #FF5A3C;
+
+
+}
+
+
+
+
+/* load animation div */
+.load-animation-div {
+  text-align: center;
+  margin-top: 4%;
+}
+
+
+
+/* Products.js styling */
+.product-details-container {
+  padding-left: 3%;
+  padding-right: 5%;
+  padding-top: 4%;
+}
+
+
+.fetching-products-div {
+  text-align: center;
+}
+
+
+.products-fetched-div {
+  margin-top: 7%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+
+.error-div {
+  text-align: center;
+
+}
+
+
+.card-style {
+  max-width: 390px;
+  height: 480px;
+  cursor: pointer;
+  text-align: center;
+
+}
+
+
+.product-image {
+  max-width: 100%;
+  height: 80%;
+  transition: transform 0.3s ease;
+
+}
+
+.good-design-div {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.product-image:hover {
+  transform: scale(1.035);
+}
+
+
+.famous-products-div-products-loaded {
+  padding-top: 10%;
+}
+
+.famous-products-div-products-not-loaded {
+  margin-top: '50%'
+}
+
+.alternate-row {
+  padding-bottom: 5%;
+
+}
+
+
+.alternative-info-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.cover-img {
+  width: 100%;
+  max-height: 660px;
+  filter: brightness(85%);
+
+}
+
+
+.cover-img-text-header {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  font-size: 4rem;
+  color: white;
+  
+}
+
+
+.cover-img-text-sub {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+  color: white;
+
+}
+
+
+.cover-img-btn {
+  position: absolute;
+  bottom: 30%;
+  left: 10%;
+  width: 20%;
+}
+
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+
+}
+
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+
+}
+
+.value-quality-div {
+  text-align: center;
+  margin-top: 3%;
+}
+
+
+.alternate-div {
+  text-align: center;
+  margin-top: 8%;
+}
+
+.alternate-row {
+  margin-bottom: 6%;
+}
+
+.icon-position  {
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+
+
+.icon-style {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: black;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+  
+}
+
+
+.icon-style:hover{
+  animation: none;
+  background: #fff;
+  color: #551B54;
+  border: 1px solid #551B54;
+}
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+.product-details-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.prev-btn {
+  cursor: pointer;
+  position: 'relative';
+  z-index: 3;
+  top: 220px;
+  right: 37px;
+
+}
+
+.intro-collection {
+  font-size: 1.5rem;
+  color: black;
+  font-style: italic;
+
+}
+
+.product-name {
+  font-size: 1.4rem;
+  color: var(--primary_btn);
+  font-style: italic;
+}
+
+
+.product-price {
+  color: black;
+}
+
+
+.shop-collections-text {
+  text-align: center;
+
+}
+
+
+.happy_man_row {
+  padding-left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.happy_man_image {
+  width: 300px;
+  height: 280px;
+
+}
+
+
+
+/* end of selected-product-details */
+
+
+
+
+
+
+/* products.js responsive styling */
+@media screen and ( min-width: 250px) and ( max-width: 400px ) {
+  .cover-img-text-header {
+    position: absolute;
+    bottom: 77.3%;
+    left: 10%;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+
+  }
+
+  
+  .cover-img-text-sub {
+    position: absolute;
+    bottom: 74.2%;
+    left: 10%;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+
+  }
+
+
+  .innovative-comfort-text {
+    font-size: 1.2rem;
+  }
+
+
+  .value-quality-div {
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+
+
+  .inside-matters {
+    font-size: 1rem;
+  }
+
+
+  .products-fetched-div {
+    margin-top: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+  }
+
+
+  .good-design-div {
+    margin-top: 30%;
+    text-align: center;
+
+  }
+
+
+  .alternate-row {
+    margin-bottom: 20%;
+  }
+
+
+  .product-image {
+    max-width: 100%;
+    height: 70%;
+    transition: transform 0.3s ease;
+  
+  }
+
+
+  .card-style {
+    max-width: 100%;
+    height: 380px;
+    cursor: pointer;
+    text-align: center;
+  
+  }
+
+
+  .happy_man_col {
+    text-align: center;
+
+  }
+
+
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------*/
+/* end of products.js styling */
+
+
+
+
+/* selected products details styling */
+
+.add-to-cart-btn {
+  width: 100%;
+  background-color: var(--primary_btn);
+  color: #fff;
+}
+
+
+.selected-product-color-span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+
+.selected-product-color-span:hover {
+  /*filter: brightness(200%) */
+}
+
+
+.selected-color-text {
+  font-weight: bold;
+}
+
+
+.selected-product-size-span {
+  width: 37px;
+  height: 30px;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+.selected-product-size-span:hover {
+  background-color: grey;
+  color: black;
+}
+
+
+.selected-quantity-text {
+  font-weight: bold;
+}
+
+
+/* selected products responsive */
+@media screen and ( max-width: 480px ) {
+  .product-details-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 8%;
+    
+  }
+
+  .selected-product-details-col {
+    margin-top: 14%;
+  
+  }
+  
+  
+
+}
+
+
+/* end of selected products details */
+
+
+
+/* Sign up styling */
+.sign-up-form-container-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+
+}
+
+
+.sign-up-form {
+  width: 50%;
+}
+
+
+.create-account-text {
+  display: flex;
+  justify-content: center;
+}
+
+
+.login-here-text {
+  cursor: pointer;
+}
+
+
+.login-here-text:hover {
+  color: #0d6efd;
+}
+
+
+.bottom-text-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+
+.bottom-link {
+  text-decoration: none;
+  color: black;
+}
+
+
+.login-text {
+  display: flex;
+  justify-content: center;
+}
+
+
+.login-btn {
+  background-color: var(--primary_btn );
+  width: 100%;
+  border: none;
+  color: #fff;
+  height: 14%;
+}
+
+
+.login-btn:focus {
+  box-shadow: none;
+
+}
+
+.login-btn:hover {
+  color: #fff;
+  
+}
+
+
+
+
+/* sign-up styling responsive */
+@media screen and ( min-width: 250px ) and ( max-width: 400px ) {
+  .sign-up-form {
+    width: 85%;
+  }
+
+}
+
+
+
+
+
+/* end of sign-up  styling */
+
+
+
+/* navbar styling */
+
+.display-cart-row {
+  cursor: pointer;
+}
+
+
+.nav-link {
+  color: black;
+}
+
+
+/* navbar styling responsive */
+/* @media screen and ( min-width: 250px ) and ( max-width: 400px ) {
+  .nav-link {
+    
+  }
+
+} */
+
+
+/* end of navbar styling */
+
+
+
+
+/* cart styling */
+.cart-div {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 4%;
+
+}
+
+
+.cart-item-image {
+  width: 170px;
+}
+
+.cart-item-name {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.cart-item-size {
+  font-size: 0.95rem;
+}
+
+.cart-item-qty {
+  font-size: 0.95rem;
+}
+
+.cart-item-price {
+  font-size: 0.95rem;
+}
+
+
+.cart-header {
+  text-align: center;
+}
+
+
+.checkout-wrapper-div {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 4%;
+
+}
+
+
+.cart-info {
+  font-style: italic;
+}
+
+
+/* cart styling responsive */
+@media screen and ( max-width: 480px ) {
+  .cart-div {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+  
+  }
+  
+  .cart-header {
+    text-align: center;
+    padding-top: 8%;
+
+  }
+
+  .cart-item-image {
+    width: 120px;
+  }
+
+  .cart-item-name {
+    font-size: 1rem;
+  }
+
+  .cart-item-size {
+    font-size: 0.85rem;
+  }
+  
+  .cart-item-qty {
+    font-size: 0.85rem;
+  }
+  
+  .cart-item-price {
+    font-size: 0.85rem;
+  }
+  
+}
+
+/* end of cart styling */
+
+
+/* checkout styling */
+.visa-details-form {
+  width: 70%;
+
+}
+
+
+.payment-btn {
+  width: 70%;
+  background-color: var(--primary_btn);
+  color: white;
+}
+
+
+
+
+
+/* checkout styling responsive */
+@media screen and (min-width: 250px) and ( max-width: 400px) {
+  .visa-details-form {
+    width: 100%;
+  
+  }
+
+  .payment-btn {
+    width: 100%;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+/* Contact-us styling */
+.query-div {
+  margin: 4% 20% 4% 20%;
+
+}
+
+.title-text {
+  text-align: center;
+  margin-top: 5%;
+}
+
+
+/* About-us styling */
+.about-header-container {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 6%;
+}
+
+.about-us-title {
+  margin-bottom: 3%;
+  font-weight: bolder;
+}
+
+.about-header-text {
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.we-believe-text {
+  font-size: larger;
+  color: white;
+  
+}
+
+.who-we-are-container {
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+.who-we-are-text {
+  font-weight: bold;
+}
+
+.who-we-are-intro-text {
+  font-size: larger;
+}
+
+
+.alternating-container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.meet-the-team-container {
+  text-align: center;
+  margin: 0% 1% 3% 4%;
+
+}
+
+.meet-the-team-text {
+  font-weight: bold;
+
+}
+
+.card-item {
+  max-width: 400px;
+  padding: 0%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 7%;
+
+}
+
+
+
+
+
+.col-text {
+  font-size:large;
+
+}
+
+.about-cover-img {
+  filter: brightness(70%);
+
+}
+
+.image-text-container {
+  position: absolute;
+  z-index: 3;
+  margin-top: 4%;
+}
+
+.col-text-header {
+  padding-bottom: 3%;
+}
+
+
+.card-title {
+  font-weight: bold;
+  
+
+}
+
+
+
+
+/* FAQs styling */
+.faq-title {
+  text-align: center;
+}
+
+
+.faq-title-text {
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.faq-item {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%; 
+}
+
+.dark {
+  background-color: #CCCCFF;
+}
+
+.light {
+  background-color: white;
+}
+
+
+
+/* cart styling */
+.go-to-checkout-btn {
+  width: 100%;
+  margin-top: 4%;
+  background-color: var(--primary_btn);
+  color: white;
+
+}
+
+
+
+
+
+/* buy now styling */
+.payment-method-div {
+  display: flex;
+  
+}
+
+
+.radio-cursor {
+  cursor: pointer;
+}
+
+
+.bold-terms {
+  text-decoration: underline;
+}
+
+
+.order-summary-header {
+  margin-top: 4%;
+  margin-left: 8%;
+  margin-bottom: 4%; 
+
+}
+
+
+
+/* buy now styling responsive */
+@media screen and ( max-width: 480px ) {
+  .buy-now-row {
+    padding-left: 22%;
+    margin-top: 10%;
+  }
+
+  .order-summary-header {
+    margin-top: 10%;
+
+  }
+
+}
+
+
+
+
+
+/* end of buy now styling */
+
+
+
+
+
+/* Footer styling */
+.footer-container {
+  width: '100%';
+  overflow-X: 'hidden';
+  margin-top: -7%;
+}
+
+
+.footer-header-text {
+  padding-bottom: 5%;
+  font-style: italic;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-sub-text {
+  font-size: 1.1rem;
+  color: black;
+}
+
+
+.footer-row {
+  background-color: #e5e4e2;
+  color: black;
+  position: relative; 
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  margin-top: 170px;
+  height: 350px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+
+.social-link {
+  text-decoration: none;
+  color: black;
+
+}
+
+
+.social-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px; 
+
+}
+
+
+
+/* footer styling responsive */
+@media screen and ( min-width: 250px ) and ( max-width: 400px ) {
+  .footer-sub-text {
+    font-size: 0.9rem;
+  }
+
+  .social {
+    padding-top: 12%;
+  }
+  
+
+}
+
+
+
+
+/* Discount div styling */
+.discount-div {
+  background-color: lightgrey;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.discount-div h4 {
+  font-weight: bolder;
+  font-size: large;
+  
+}
+
+
+.sign-up-and-save-text {
+  cursor: pointer;
+}
+
+
+.sign-up-close-btn {
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+}
+
+
+.collapse-div  {
+  display: none;
+  transition: all 0.2s all;
+}
+
+
+/* discount div responsive styling */
+@media screen and (min-width: 250px) and (max-width: 400px) {
+  .discount-div {
+    margin-top: 2%;
+  }
+
+}
+
+
+
+
+/* newsletter styling */
+.newsletter-div {
+  background-color: #e5e4e2;
+  text-align: center;
+  height: 240px;
+  padding-top: 3%;
+
+}
+
+
+.newsletter-form {
+  width: 50%;
+  margin-left: 25%;
+
+}
+
+
+.subscribe-btn {
+  background-color: #3a2e2c;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+
+}
+
+
+.newsletter-email {
+  border: none;
+
+}
+
+
+
+/* newsletter responsive */
+@media screen and (min-width: 250px) and (max-width: 400px) {
+  .newsletter-form {
+    width: 85%;
+    margin-left: 7%;
+  
+  }
+
+  .newsletter-div {
+    padding-top: 7%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+  
+  }
+    
+
+}
