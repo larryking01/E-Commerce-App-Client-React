@@ -10,12 +10,12 @@ import App from './App'
 
 
 
-const local_server = 'http://localhost:8000/'
-// const remote_server = 'https://e-commerce-server2.herokuapp.com/'
+// const local_server = 'http://localhost:8000/'
+const remote_server = 'https://e-commerce-app-server-graphql.onrender.com'
 
 
 const apolloClient = new ApolloClient({
-  uri: local_server,
+  uri: remote_server,
   cache: new InMemoryCache()
 
 })
